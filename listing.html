@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Loom & Lane — Products</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="style.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/4e9a8e0d2b.js" crossorigin="anonymous"></script>
+</head>
+<body>1
+  <nav class="navbar navbar-expand-lg px-3">
+    <a class="navbar-brand" href="index.html">Loom & Lane</a>
+    <form class="d-flex ms-3 flex-grow-1" id="searchForm" style="max-width: 400px;">
+  <input type="search" id="searchInput" class="form-control" placeholder="Search crafts, decor, accessories">
+  <button class="btn btn-outline-secondary ms-2" type="button" id="searchBtn" title="Search">
+    🔍
+  </button>
+</form>
+    </form>
+    <div class="ms-auto d-flex align-items-center gap-3">
+      <label class="form-check form-switch mb-0">
+        <input class="form-check-input" type="checkbox" id="darkModeToggle">
+        <span class="ms-1">Dark</span>
+      </label>
+      <a href="cart.html" class="btn btn-outline-secondary">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="ms-1">Cart</span>
+        <span id="cartCount" class="badge text-bg-secondary ms-2">0</span>
+      </a>
+    </div>
+  </nav>
+
+  <main class="container my-4">
+    <div class="d-flex justify-content-between align-items-center">
+      <h2>All products</h2>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Listing</li>
+        </ol>
+      </nav>
+    </div>
+
+    <div class="row g-3 align-items-end">
+      <div class="col-12 col-md-3">
+        <label class="form-label">Category</label>
+        <select id="filterCategory" class="form-select"></select>
+      </div>
+      <div class="col-6 col-md-2">
+        <label class="form-label">Min price</label>
+        <input id="priceMin" type="number" class="form-control" placeholder="0">
+      </div>
+      <div class="col-6 col-md-2">
+        <label class="form-label">Max price</label>
+        <input id="priceMax" type="number" class="form-control" placeholder="1000">
+      </div>
+      <div class="col-12 col-md-3">
+        <label class="form-label">Sort by</label>
+        <select id="sortSelect" class="form-select">
+          <option value="">Default</option>
+          <option value="popularity">Popularity</option>
+          <option value="priceAsc">Price: Low to High</option>
+          <option value="priceDesc">Price: High to Low</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="spinner" class="spinner mt-3"></div>
+    <div id="productGrid" class="row mt-3"></div>
+  </main>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css" />
+</head>
+    <body>
+  <!--chat bot icon setup-->
+  <div class="ai-assistant-icon1" id="chatbotToggle1" title="AI Assistant">
+    <img src="pictures/4to22.jpg.jpg" alt="AI Assistant" class="chatbot-photo1">
+  </div>
+
+  <!--chat bot setup-->
+  <div id="chatbot1">
+    <div class="chat-header1">
+      AI Assistant
+      <span id="closeChat1">&times;</span>
+    </div>
+    <div class="chat-body1" id="chatBody1"></div>
+    <div class="chat-footer1">
+      <input type="text" id="userInput1" placeholder="Type a message...">
+      <button id="sendBtn1">Send</button>
+    </div>
+  </div>
+ 
+ <script src="chatbot.js"></script>  <!--js linking-->
+ 
+
+
+  <footer class="footer">
+    <div class="container d-flex justify-content-between">
+      <div><strong>Loom & Lane</strong></div>
+      <div><a href="#">Contact</a> · <a href="#">Terms</a></div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
